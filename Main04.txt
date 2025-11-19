@@ -1,0 +1,25 @@
+package main;
+
+import java.util.Scanner;
+
+public class Main02 {
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		
+		int contador = 0;
+		int contadorNumeroNegativos = 0;
+		
+		do {
+			System.out.println("Digite um numero");
+			int valor = scan.nextInt();
+			
+			if(valor < 0) {
+				contadorNumeroNegativos++;
+			}
+			
+			contador++;	// contador = contador + 1;		
+		} while(contador < 10);
+		System.out.println("Qtd. de n° negativos e " +
+				contadorNumeroNegativos);
+	}
+}
